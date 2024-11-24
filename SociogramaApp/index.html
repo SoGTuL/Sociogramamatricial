@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sociograma</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <h1>Sociograma Escolar</h1>
+    <form id="sociograma-form">
+    
+    <button type="button" id="reset">Resetear Datos</button>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="bien1">Relación Positiva 1:</label>
+      <input type="text" id="bien1" name="bien1">
+      
+      <label for="bien2">Relación Positiva 2:</label>
+      <input type="text" id="bien2" name="bien2">
+      
+      <label for="bien3">Relación Positiva 3:</label>
+      <input type="text" id="bien3" name="bien3">
+      
+      <label for="mal1">Relación Negativa 1:</label>
+      <input type="text" id="mal1" name="mal1">
+      
+      <label for="mal2">Relación Negativa 2:</label>
+      <input type="text" id="mal2" name="mal2">
+      
+      <label for="mal3">Relación Negativa 3:</label>
+      <input type="text" id="mal3" name="mal3">
+
+      <div class="button-container">
+        <button type="button" id="cargar">Cargar Datos</button>
+      </div>
+    </form>
+
+    <!-- Contenedor para la matriz -->
+    <div id="sociograma" style="margin-top: 20px;"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
